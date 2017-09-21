@@ -1,0 +1,8 @@
+<?php
+
+include dirname(__FILE__)."/../modele/fonctions.php";
+$lesVols = getLesVols();
+print_r($lesVols);
+
+?>
+

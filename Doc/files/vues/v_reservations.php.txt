@@ -1,0 +1,49 @@
+
+<div id="contenu">
+
+<title> Liste des réservations </title>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Numéro de Vol</th>
+            <th>Nombre de Places</th>
+            <th>Pdf</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+ <?php
+ 
+ if($lesReservations!=null)
+ var_dump($lesReservations) ;
+ {
+ $i=0;
+
+ foreach($lesReservations as $reservation)
+{  
+    
+  echo   '<tr>' ;
+      echo     '<td>'.$reservation['nom'].'</td>' ;
+    echo       '<td>'.$reservation['prenom'].'</td>' ;
+    echo       '<td>'.$reservation['numero'].'</td>' ;
+    echo       '<td>'.$reservation['nbVoyageurs'].'</td>' ;
+   echo  "<td><a href = index.php?action=pdfReservation&numReservation=$i> <img src = 'images/pdf_icon.gif' border = '0'></a></td>" ;
+   
+    
+   
+   echo         '</tr>' ;
+    
+    $i++;
+
+} 
+
+
+ }
+
+ ?>
+    </tbody>
+</table>
+
