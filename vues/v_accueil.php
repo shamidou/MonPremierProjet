@@ -1,3 +1,3 @@
 <div id="accueil">
-Bienvenue Mesdames et Messieurs, sur l'intranet d'Air Azur
+Bienvenue Madame et Monsieur, sur l'intranet d'Air Azur
 </div>
